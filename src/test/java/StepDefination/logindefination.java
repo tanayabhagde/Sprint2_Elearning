@@ -2,6 +2,7 @@ package StepDefination;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.AssertJUnit;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -19,6 +20,44 @@ public class logindefination {
 		driver.manage().window().maximize();
 	    
 	}
+	
+	@Then("^User verify the Icon of username is display or not$")
+	public void user_verify_the_Icon_of_username_is_display_or_not() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		try 
+		{
+			boolean icon1= driver.findElement(By.xpath("//em[@class='fa fa-user fa-fw']")).isDisplayed();
+			System.out.println("User is able to see Icon of username "+icon1);
+			Thread.sleep(4000);
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("User is not able to see Icon of username"+e);
+			AssertJUnit.fail();
+		}
+	    
+	}
+
+	@Then("^User verify the Icon of password is display or not$")
+	public void user_verify_the_Icon_of_password_is_display_or_not() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		try 
+		{
+			boolean icon2= driver.findElement(By.xpath("//em[@class='fa fa-lock fa-fw']")).isDisplayed();
+			
+			System.out.println("User is able to see Icon of password"+icon2);
+			Thread.sleep(4000);
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("User is not able to see Icon of password"+e);
+			AssertJUnit.fail();
+		}
+	}
+
+
 
 	@When("^User enter the \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enter_the_and(String user, String pass) throws Throwable {
@@ -34,7 +73,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to enter username and pass");
+				System.out.println("User is not able to enter username and pass"+e);
 				
 			}
 	}
@@ -51,7 +90,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to click on login button");
+				System.out.println("User is not able to click on login button"+e);
 			}
 	    
 	    
@@ -72,7 +111,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to login and navigate to dashboard");
+				System.out.println("User is not able to login and navigate to dashboard"+e);
 			}
 	    
 	    
@@ -109,7 +148,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able click on I Lost My Password");
+				System.out.println("User is not able click on I Lost My Password"+e);
 				Assert.fail();
 			}
 	    
@@ -131,7 +170,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to navigate on Registration page");
+				System.out.println("User is not able to navigate on Registration page"+e);
 				Assert.fail();
 			}
 	    
@@ -153,7 +192,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to enter username or email");
+				System.out.println("User is not able to enter username or email"+e);
 				Assert.fail();
 			}
 	    
@@ -171,7 +210,7 @@ public class logindefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able click on send message ");
+				System.out.println("User is not able click on send message "+e);
 			}
 	}
 
@@ -187,7 +226,7 @@ public class logindefination {
 		}
 		catch(Exception e)
 		{
-			System.out.println("User gets any Email for reseting password"+e);
+			System.out.println("User gets Email for reseting password"+e);
 			
 		}
 	   

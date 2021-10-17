@@ -11,13 +11,17 @@ features="src/test/java/Feature"
 ,glue= {"StepDefination","hooks"},
 dryRun = false,
 monochrome = true,
-//tags= {"@Registration,@Successful_registration_verification"}
-tags= {" @Validation_Message"}
-//tags= {"@Successful_registration_verification"}
+//tags= {"@Validation_Message,@Successful_registration_verification"}
 //tags= {"@Verification_of_Displayed_Images"}
+//tags= {" @Validation_Message"}
+//tags= {"@Successful_registration_verification"}
+
+//tags= {"@Verification_of_Displayed_Icons"}
 //tags= {"@login"}
-//tags= {"@Forgot_Password"}
 //tags= {"@Login_Validation"}
+//tags= {"@Forgot_Password"}
+plugin= {"pretty","html:target/cucumber-pretty" , "junit:target/report.xml", "json:target/jsonreport.json"}
+
 
 		)
 

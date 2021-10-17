@@ -1,5 +1,11 @@
-#@tag
+
 Feature: Elearning login page
+
+@Verification_of_Displayed_Icons
+  Scenario: Automation of login page for verification of displayed icons
+    Given User is on Elearning Application
+    Then User verify the Icon of username is display or not
+    Then User verify the Icon of password is display or not
 
   @login
   Scenario Outline: Automation of login page

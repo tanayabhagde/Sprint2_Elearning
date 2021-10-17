@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="11" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="26" time="1633.634148">
+<testcase classname="Elearning login page" name="Automation of login page for verification of displayed icons" time="20.951597">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+Then User verify the Icon of username is display or not.....................passed
+Then User verify the Icon of password is display or not.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning login page" name="Automation of login page" time="32.489134">
+<system-out><![CDATA[Given User is on the Elearning Application..................................passed
+When User enter the "TK" and "tim"..........................................passed
+And User clicks on the login button.........................................passed
+Then User navigates to dashboard page Successfully..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning login page" name="Automation of login page for validation message" time="15.166836">
+<system-out><![CDATA[Given User is on the Elearning Application..................................passed
+When User enter the "TK" and "tt"...........................................passed
+And User clicks on the login button.........................................passed
+Then User gets validation message for invalid data..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning login page" name="Automation of login page for validation message 2" time="14.440039">
+<system-out><![CDATA[Given User is on the Elearning Application..................................passed
+When User enter the "Ttt" and "tt"..........................................passed
+And User clicks on the login button.........................................passed
+Then User gets validation message for invalid data..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning login page" name="Automation of I Lost My Password" time="24.838344">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.logindefination.user_gets_a_validation_message(logindefination.java:225)&#13;&#10;&#9;at ✽.Then User gets a validation message(loginpage.feature:40)&#13;&#10;"><![CDATA[Given User is on the Elearning Application..................................passed
+When User clicks on the I Lost My Password..................................passed
+Then User navigates to the I Lost My Password page..........................passed
+When User enters the details of Username or Email address at "tim@gmail.com".passed
+And User clicks on the send message button..................................passed
+Then User gets a validation message.........................................failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.logindefination.user_gets_a_validation_message(logindefination.java:225)
+	at ✽.Then User gets a validation message(loginpage.feature:40)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for verification of displayed images" time="16.631342">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+Then User verify the Image of follow course is display or not...............passed
+Then User verify the Image of Teach course is display or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages" time="64.251626">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Tanish","Nikose", "Tanish@gmail.com","TN","tanish" and "tanish".passed
+And User enters "9876543210"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-der-a32a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "This login is already in use" message.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages 2" time="67.705521">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "blank","blank", "blank","blank","tanish" and "tanish"......passed
+And User enters "9876543210"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "Required field" message.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages 3" time="62.13285">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Tej","Camp", "TC@gmail","randomstring","tanoph" and "tanoph".passed
+And User enters "9087643321"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "The email address is not complete or contains some invalid characters" message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages 4" time="63.919277">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Ted","Den", "den@gmail.com","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxn","tanoph" and "tanoph".passed
+And User enters "09876514323"...............................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "The login needs to be maximum 50 characters long" message...passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages 5" time="220.498736">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Text","You", "Text@gmail.com","TextYou@21","tanish" and "tanish".passed
+And User enters "098765431".................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "Your login can only contain letters, numbers and _.-" message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for validation messages 6" time="61.983586">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Tamrid","Nikose", "Tanish@gmail.com","randomstring","tani" and "tanish".passed
+And User enters "098765433213"..............................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User gets "You have typed two different passwords" message.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login" time="70.273553">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Tamana","Bhatt", "Tam@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "0988765443"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Tamana","Bhatt", "Tam@gmail.com","randomstring",  "0988765443" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+When User clicks profile icon...............................................passed
+And User clicks on log out link.............................................passed
+Then User navigates to login page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 2" time="67.735373">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Taext12","Bhat12", "Tam@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "9876543210"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Taext12","Bhat12", "Tam@gmail.com","randomstring",  "9876543210" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+When User clicks profile icon...............................................passed
+And User clicks on log out link.............................................passed
+Then User navigates to login page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 3" time="82.011171">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Text","You", "Text@gmail.com","Texttomebwou_.21","tanish" and "tanish".passed
+And User enters "3456899"...................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","grt","oi"............................................passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Text","You", "Text@gmail.com","Texttomebwou_.21",  "3456899" ,"772","grt","oi".passed
+When User clicks profile icon...............................................passed
+And User clicks on log out link.............................................passed
+Then User navigates to login page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 4" time="71.155256">
+<system-out><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Tamana","Bhatt", "Tam@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "987654221".................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "Abc@%772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Tamana","Bhatt", "Tam@gmail.com","randomstring",  "987654221" ,"Abc@%772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+When User clicks profile icon...............................................passed
+And User clicks on log out link.............................................passed
+Then User navigates to login page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 5" time="97.714884">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:412)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;@#$%^&amp;&quot;,&quot;You&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;987654321&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "@#$%^&","You", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "987654321".................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "@#$%^&","You", "Text@gmail.com","randomstring",  "987654321" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:412)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "@#$%^&","You", "Text@gmail.com","randomstring",  "987654321" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 6" time="61.922182">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:412)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Text&quot;,&quot;@#$%^&amp;&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;9876543210&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Text","@#$%^&", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "9876543210"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Text","@#$%^&", "Text@gmail.com","randomstring",  "9876543210" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:412)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Text","@#$%^&", "Text@gmail.com","randomstring",  "9876543210" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 7" time="64.705878">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:432)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan&quot;,&quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusja&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;9876543210&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusja", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "9876543210"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusja", "Text@gmail.com","randomstring",  "9876543210" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:432)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusja", "Text@gmail.com","randomstring",  "9876543210" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 8" time="66.417107">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:439)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Sdf&quot;,&quot;Red&quot;, &quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan@gmail.com&quot;,&quot;randomstring&quot;,  &quot;1234567890&quot; ,&quot;1234&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Sdf","Red", "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "1234567890"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "1234","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Sdf","Red", "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan@gmail.com","randomstring",  "1234567890" ,"1234","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:439)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Sdf","Red", "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan@gmail.com","randomstring",  "1234567890" ,"1234","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 9" time="60.572587">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:446)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Teret&quot;,&quot;tyu&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;123456790987654321123&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Teret","tyu", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "123456790987654321123".....................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "123456790987654321123" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:446)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "123456790987654321123" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 10" time="64.890539">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:418)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Teret&quot;,&quot;tyu&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;!@$%&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Teret","tyu", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "!@$%"......................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "!@$%" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:418)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "!@$%" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 11" time="69.788808">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:469)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Teret&quot;,&quot;tyu&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;abcderf&quot; ,&quot;772&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Teret","tyu", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "abcderf"...................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "abcderf" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:469)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "abcderf" ,"772","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 12" time="62.390903">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:453)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Teret&quot;,&quot;tyu&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;1234567890&quot; ,&quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan&quot;,&quot;https://spt.skype.com/en/faq/FA10858you-there&quot;,&quot;https://www.linkedin.com/in/abc-dr-a23a18b/&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Teret","tyu", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "1234567890"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "1234567890" ,"tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:453)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "1234567890" ,"tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","https://spt.skype.com/en/faq/FA10858you-there","https://www.linkedin.com/in/abc-dr-a23a18b/"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 13" time="64.775248">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:461)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Teret&quot;,&quot;tyu&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;1234567890&quot; ,&quot;12344&quot;,&quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan&quot;,&quot;tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Teret","tyu", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "1234567890"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "12344","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan".passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "1234567890" ,"12344","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:461)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Teret","tyu", "Text@gmail.com","randomstring",  "1234567890" ,"12344","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan","tusjansfmvmdklfgrttyuuiooplkjhhgffddsxvzbxmcmsncjhgncjfheuguhifcehgfryewxntyyueuhhjdfncfgsygcuyejfukqmaldjtusjan"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+<testcase classname="Elearning Registration" name="Automation of registration page for successfull login 14" time="64.271771">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:64)&#13;&#10;&#9;at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:424)&#13;&#10;&#9;at ✽.Then User navigates to the Home page after successfully entering the details as &quot;Sdf&quot;,&quot;Red&quot;, &quot;Text@gmail.com&quot;,&quot;randomstring&quot;,  &quot;1234567890&quot; ,&quot;1234&quot;,&quot;@%$&quot;,&quot;@#$&quot;(registrationpage.feature:56)&#13;&#10;"><![CDATA[Given User is on Elearning Application......................................passed
+When User clicks on sign up link............................................passed
+Then User navigates to registration page....................................passed
+Given User is on Elearning Application......................................passed
+When User clicks on what you want to do field...............................passed
+And User enters "Sdf","Red", "Text@gmail.com","randomstring","tanish" and "tanish".passed
+And User enters "1234567890"................................................passed
+And User clicks on dropdown button of language..............................passed
+And User search with "eng" and selects language.............................passed
+And User enters "1234","@%$","@#$"..........................................passed
+And User clicks on Register button..........................................passed
+Then User navigates to the Home page after successfully entering the details as "Sdf","Red", "Text@gmail.com","randomstring",  "1234567890" ,"1234","@%$","@#$".failed
+When User clicks profile icon...............................................skipped
+And User clicks on log out link.............................................skipped
+Then User navigates to login page...........................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.fail(Assert.java:64)
+	at StepDefination.registrationdefination.user_navigates_to_the_Home_page_after_successfully_entering_the_details_as(registrationdefination.java:424)
+	at ✽.Then User navigates to the Home page after successfully entering the details as "Sdf","Red", "Text@gmail.com","randomstring",  "1234567890" ,"1234","@%$","@#$"(registrationpage.feature:56)
+]]></failure>
+</testcase>
+</testsuite>

@@ -42,7 +42,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able click on signup page");
+				System.out.println("User is not able click on signup page"+e);
 				AssertJUnit.fail();
 			}
 	    
@@ -63,7 +63,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to navigate on Registration page");
+				System.out.println("User is not able to navigate on Registration page"+e);
 				AssertJUnit.fail();
 			}
 	    
@@ -75,12 +75,12 @@ public class registrationdefination {
 		try 
 		{
 			boolean img1= driver.findElement(By.xpath("//input[@value='5']")).isDisplayed();
-			System.out.println("User is able to see Image of follow course is display or not"+img1);
+			System.out.println("User is able to see Image of follow course "+img1);
 			
 		}
 		catch(Exception e)
 		{
-			System.out.println("User is not able to see Image of follow course is display or not"+e);
+			System.out.println("User is not able to see Image of follow course "+e);
 			AssertJUnit.fail();
 		}
 	    
@@ -103,39 +103,6 @@ public class registrationdefination {
 	}
 	
 
-
-
-	
-
-
-
-	/*@Then("^User enters \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_and(String ln, String email, String un, String pass, String cpass) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		try
-		{
-			//driver.findElement(By.name("firstname")).sendKeys(fn);
-			driver.findElement(By.name("lastname")).sendKeys(ln);
-			Thread.sleep(2000);
-			driver.findElement(By.name("email")).sendKeys(email);
-			Thread.sleep(2000);
-			driver.findElement(By.name("username")).sendKeys(un);
-			Thread.sleep(2000);
-			driver.findElement(By.name("pass1")).sendKeys(pass);
-			Thread.sleep(2000);
-			driver.findElement(By.name("pass2")).sendKeys(cpass);
-			Thread.sleep(2000);
-			}
-			
-			catch(Exception e)
-			{
-				System.out.println("User is not able to enter username and pass");
-				Assert.fail();
-			}
-		
-	    
-	}
-	*/
 
 	@When("^User clicks on what you want to do field$")
 	public void user_clicks_on_what_you_want_to_do_field() throws Throwable {
@@ -190,7 +157,7 @@ public class registrationdefination {
 				String rs=un+temp;
 				System.out.println(rs);
 				
-				//un = un.replaceAll(un,rs);
+				
 				un = un.replaceAll(un,rs);
 				System.out.println("User name as RandomString ");
 				
@@ -211,23 +178,17 @@ public class registrationdefination {
 			System.out.println(rs);
 			*/
 			driver.findElement(By.name("firstname")).sendKeys(fn);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			driver.findElement(By.name("lastname")).sendKeys(ln);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			driver.findElement(By.name("email")).sendKeys(email);
-			Thread.sleep(2000);
-			//String s = RandomStringUtils.randomAlphanumeric(8);
-			
-			
-			
-			
-			
+			Thread.sleep(4000);
 			driver.findElement(By.name("username")).sendKeys(un);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			driver.findElement(By.name("pass1")).sendKeys(pass);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			driver.findElement(By.name("pass2")).sendKeys(cpass);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			
 			System.out.println("User is able to enter firstname,lastname,email,username,password,confirm password details");
 			
@@ -235,7 +196,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to enter firstname,lastname,email,username,password,confirm password details");
+				System.out.println("User is not able to enter firstname,lastname,email,username,password,confirm password details"+e);
 				AssertJUnit.fail();
 			}
 		
@@ -258,7 +219,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to enter ");
+				System.out.println("User is not able to enter phone number "+e);
 				AssertJUnit.fail();
 			}
 		
@@ -276,7 +237,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able click on dropdown list of language");
+				System.out.println("User is not able click on dropdown list of language"+e);
 				AssertJUnit.fail();
 			}
 		
@@ -297,13 +258,13 @@ public class registrationdefination {
 	    	//Thread.sleep(1000);
 	    	
 	    	
-	    	System.out.println("User is able to select searched language from drop down list ");
+	    	System.out.println("User is able to select search language from drop down list ");
 	    	
 			}
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to search in lang field ");
+				System.out.println("User is not able to search language from drop doen list "+e);
 				AssertJUnit.fail();
 				
 			}
@@ -332,19 +293,14 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to enter code, skype,linkedin url");
+				System.out.println("User is not able to enter code, skype,linkedin url"+e);
 				AssertJUnit.fail();
 			}
 	    
 	}
 
 
-
-
-
-	
-	
-	@Then("^User clicks on Register button$")
+@Then("^User clicks on Register button$")
 	public void user_clicks_on_Register_button() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		try {
@@ -356,7 +312,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to click on Register button");
+				System.out.println("User is not able to click on Register button"+e);
 			}
 	   
 	}
@@ -370,7 +326,7 @@ public class registrationdefination {
 			String actText="a";
 			if(validation.equals("Required field"))
 			{
-				//String replacement= driver.findElement(By.xpath("//div[@class='alert alert-warning']")).getText();
+				
 				String replacement= driver.findElement(By.xpath("//div[contains(text(),'Required field')]")).getText();
 				actText=actText.replaceAll(actText, replacement);
 				
@@ -423,7 +379,7 @@ public class registrationdefination {
 		
 		catch(Exception e)
 		{
-			System.out.println("User is not able to Register");
+			System.out.println("User is not able to Register"+e);
 			AssertJUnit.fail();
 		}
 		
@@ -450,19 +406,63 @@ public class registrationdefination {
 
 			
 			String regex ="[!@#^$%&*()_+=|<>?{}\\[\\]~-]";
-			if((fn.matches("["+ regex +"]+"))||(ln.matches("["+regex+"]+"))||(pn.matches("["+regex+"]+"))||(code.matches("["+regex+"]+"))||(skype.matches("["+regex+"]+"))||(lurl.matches("["+regex+"]+")))
+			if((fn.matches("["+ regex +"]+"))||(ln.matches("["+regex+"]+")))
 			{
-				System.out.println("Invalid: Special chracters");
+				System.out.println("Invalid: Special characters at first name and last name field");
+				Assert.fail();
+			}
+			
+			if((pn.matches("["+regex+"]+")))
+			{
+				System.out.println("Invalid: Special characters at phone field");
+				Assert.fail();
+			}
+			
+			if((skype.matches("["+regex+"]+"))||(lurl.matches("["+regex+"]+")))
+			{
+				System.out.println("Invalid: Special characters at skype and linkedinURL");
 				Assert.fail();
 			}
 			
 			
-			if(fn.length()>200||ln.length()>200||pn.length()>200||code.length()>200||skype.length()>200||lurl.length()>200)
+			if(fn.length()>100||ln.length()>100)
+		
+				{
+					System.out.println("Invalid: Characters more than 100 at first name and last name field");
+					Assert.fail();
+				}
+			
+			if(email.length()>100)
+				
 			{
-				System.out.println("Invalid: Chracters more than 200");
+				System.out.println("Invalid: Characters more than 100 at email field");
 				Assert.fail();
 			}
 			
+			if(pn.length()>12)
+				
+			{
+				System.out.println("Invalid: Characters more than 12 at phone Number field");
+				Assert.fail();
+			}
+			
+			if(code.length()>100)
+				
+			{
+				System.out.println("Invalid: Characters more than 100 at code field");
+				Assert.fail();
+			}
+			
+			
+			if(skype.length()>100||lurl.length()>100)
+				
+			{
+				System.out.println("Invalid: Characters more than 100 at skype and linkedinURL");
+				Assert.fail();
+			}
+			
+			
+				
 			String regex1 ="[ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]";
 			if((pn.matches("["+ regex1 +"]+"))){
 				System.out.println("Invalid: Alphabetic characters at phone number field");
@@ -473,7 +473,7 @@ public class registrationdefination {
 		}
 		catch(Exception e)
 		{
-			System.out.println("User is able to navigate to Registration acknowledgment page");
+			System.out.println("User is not able to navigate to Registration acknowledgment page"+e);
 			Assert.fail();
 		}
 	}
@@ -489,7 +489,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to click on profile icon");
+				System.out.println("User is not able to click on profile icon"+e);
 				 Assert.fail();
 			}
 	}
@@ -505,7 +505,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able click on Logout");
+				System.out.println("User is not able click on Logout"+e);
 				 Assert.fail();
 			}
 
@@ -527,7 +527,7 @@ public class registrationdefination {
 			
 			catch(Exception e)
 			{
-				System.out.println("User is not able to navigate to Login page");
+				System.out.println("User is not able to navigate to Login page"+e);
 				Assert.fail();
 			}
 	    
